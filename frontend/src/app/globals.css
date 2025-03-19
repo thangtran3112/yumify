@@ -272,7 +272,7 @@ input[type="color"] {
 }
 
 .landing__hero-images {
-  @apply basis-1/2 h-full relative overflow-hidden rounded-r-lg;
+  @apply basis-1/2 h-full relative overflow-hidden rounded-lg;
 }
 
 .landing__hero-image {
@@ -1550,8 +1550,6 @@ input[type="color"] {
 .dashboard-navbar__sidebar-trigger {
   @apply text-customgreys-dirtyGrey hover:text-white-50 transition-colors;
 }
-
-
 
 @layer base {
   * {
