@@ -1,0 +1,381 @@
+[
+  {
+    "recipeId": "3a9f3d6c-c391-4b1c-9c3d-6c3f3d6c3f3d",
+    "teacherId": "user_7kFh92JkCpQw3N8M5L4xRzVtYs",
+    "bakerName": "Pierre Hermé",
+    "title": "Introduction to French Patisserie",
+    "description": "Master the art of French pastry with this comprehensive collection of techniques and recipes.",
+    "category": "French Pastry",
+    "image": "https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg",
+    "price": 4999,
+    "difficulty": "Beginner",
+    "status": "Published",
+    "favorites": [
+      { "userId": "user_2ntu96pUCljUV2T9W0AThzjacQB" },
+      { "userId": "user_9xWp45MnKjL8vRt2Hs6BqDcEy" }
+    ],
+    "sections": [
+      {
+        "sectionId": "2f9d1e8b-5a3c-4b7f-9e6d-8c2a1f0b3d5e",
+        "sectionTitle": "Essential Pastry Techniques",
+        "sectionDescription": "Learn fundamental techniques that form the foundation of French pastry making.",
+        "chapters": [
+          {
+            "chapterId": "a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6",
+            "type": "Video",
+            "title": "Welcome to French Patisserie",
+            "content": "https://example.com/videos/welcome-patisserie.mp4",
+            "video": "https://example.com/videos/welcome-patisserie.mp4",
+            "comments": [
+              {
+                "commentId": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p",
+                "userId": "emma.wilson@hotmail.com",
+                "text": "This inspired me to finally try making croissants!",
+                "timestamp": "2023-03-10T09:15:00Z"
+              }
+            ]
+          },
+          {
+            "chapterId": "b2c3d4e5-f6g7-h8i9-j0k1-l2m3n4o5p6q7",
+            "type": "Text",
+            "title": "Understanding Butter in Pastry",
+            "content": "The quality and temperature of butter are crucial factors in creating perfect French pastry. This chapter explores how butter affects texture, lamination, and flavor...",
+            "comments": []
+          },
+          {
+            "chapterId": "c3d4e5f6-g7h8-i9j0-k1l2-m3n4o5p6q7r8",
+            "type": "Quiz",
+            "title": "Pastry Basics Quiz",
+            "content": "1. What is the ideal temperature range for butter in laminated dough?\n2. What is the difference between pâte sucrée and pâte sablée?\n3. Name three classic French pastry shapes and their traditional fillings.",
+            "comments": []
+          }
+        ]
+      },
+      {
+        "sectionId": "3g0e2f9c-6d4e-5a7f-8b9g-1h2i3j4k5l6m",
+        "sectionTitle": "Classic French Tarts",
+        "sectionDescription": "Master the art of creating perfect French tarts, from crisp shells to luscious fillings.",
+        "chapters": [
+          {
+            "chapterId": "d4e5f6g7-h8i9-j0k1-l2m3-n4o5p6q7r8s9",
+            "type": "Video",
+            "title": "Perfect Tart Shells",
+            "content": "https://example.com/videos/tart-shells.mp4",
+            "video": "https://example.com/videos/tart-shells.mp4",
+            "comments": []
+          },
+          {
+            "chapterId": "e5f6g7h8-i9j0-k1l2-m3n4-o5p6q7r8s9t0",
+            "type": "Text",
+            "title": "Fruit Tart Glazes",
+            "content": "The perfect glaze adds both protection and glossy visual appeal to fruit tarts. Learn the techniques for creating nappage and other professional glazes...",
+            "comments": []
+          },
+          {
+            "chapterId": "f6g7h8i9-j0k1-l2m3-n4o5-p6q7r8s9t0u1",
+            "type": "Quiz",
+            "title": "Tart Techniques Quiz",
+            "content": "1. What causes a tart shell to shrink during baking?\n2. How do you prevent a soggy tart bottom?\n3. What is the purpose of blind baking?",
+            "comments": []
+          }
+        ]
+      },
+      {
+        "sectionId": "4h1f3g0d-7e5f-6b8g-9c0h-2i3j4k5l6m7n",
+        "sectionTitle": "Exquisite French Macarons",
+        "sectionDescription": "Master the art of creating perfect macarons with crisp shells and delicate fillings.",
+        "chapters": [
+          {
+            "chapterId": "g7h8i9j0-k1l2-m3n4-o5p6-q7r8s9t0u1v2",
+            "type": "Video",
+            "title": "Macaron Shell Perfection",
+            "content": "https://example.com/videos/macaron-shells.mp4",
+            "video": "https://example.com/videos/macaron-shells.mp4",
+            "comments": []
+          },
+          {
+            "chapterId": "h8i9j0k1-l2m3-n4o5-p6q7-r8s9t0u1v2w3",
+            "type": "Text",
+            "title": "Creative Macaron Fillings",
+            "content": "Beyond the traditional buttercream, explore innovative fillings that can transform your macarons into extraordinary confections...",
+            "comments": []
+          },
+          {
+            "chapterId": "i9j0k1l2-m3n4-o5p6-q7r8-s9t0u1v2w3x4",
+            "type": "Quiz",
+            "title": "Macaron Mastery Quiz",
+            "content": "1. What is macaronage and why is it crucial?\n2. How do you identify when macaron shells are properly baked?\n3. What causes hollow shells in macarons and how can it be prevented?",
+            "comments": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "recipeId": "8b4f7d9c-4b1c-4b1c-8b4f-7d9c8b4f7d9c",
+    "teacherId": "user_4mNj68RtPvXw2Ky9Qc7HbSdAf",
+    "bakerName": "Claire Saffitz",
+    "title": "Advanced Cake Architecture",
+    "description": "Learn how to create structurally impressive cakes with multiple tiers, complex fillings, and perfect balance.",
+    "category": "Cake Design",
+    "image": "https://images.pexels.com/photos/1729797/pexels-photo-1729797.jpeg",
+    "price": 9999,
+    "difficulty": "Advanced",
+    "status": "Published",
+    "favorites": [
+      { "userId": "user_2ntu96pUCljUV2T9W0AThzjacQB" },
+      { "userId": "user_5vBn23WsLkMp7Jh4Gt8FxYcRz" }
+    ],
+    "sections": [
+      {
+        "sectionId": "1a7b3c5d-9e2f-4g6h-8i0j-2k4l6m8n0p1q",
+        "sectionTitle": "Cake Structure Fundamentals",
+        "sectionDescription": "Master the engineering principles behind stable, level multi-tier cakes.",
+        "chapters": [
+          {
+            "chapterId": "c3d4e5f6-g7h8-i9j0-k1l2-m3n4o5p6q7r8",
+            "type": "Video",
+            "title": "Cake Support Systems",
+            "content": "https://example.com/videos/cake-support-systems.mp4",
+            "videoLength": 1200,
+            "comments": [],
+            "videoUrl": "https://example.com/videos/cake-support-systems.mp4",
+            "videoUniqueId": "vid_004",
+            "videoType": "hls"
+          },
+          {
+            "chapterId": "d4e5f6g7-h8i9-j0k1-l2m3-n4o5p6q7r8s9",
+            "type": "Quiz",
+            "title": "Structural Integrity Quiz",
+            "content": "1. What is the maximum recommended height for a tier without internal support?\n2. Explain the concept of 'load-bearing' in multi-tier cakes.\n3. When should you use acrylic discs versus cardboard cake boards?",
+            "comments": []
+          },
+          {
+            "chapterId": "e5f6g7h8-i9j0-k1l2-m3n4-o5p6q7r8s9t0",
+            "type": "Text",
+            "title": "Calculating Cake Servings",
+            "content": "Properly calculating the number of servings is crucial for event planning. This chapter covers how to determine the ideal cake size based on guest count and serving style...",
+            "comments": []
+          }
+        ]
+      },
+      {
+        "sectionId": "2b8c4d6e-0f3g-5h7i-9j1k-3l5m7n9p1q3r",
+        "sectionTitle": "Artistic Buttercream Techniques",
+        "sectionDescription": "Explore advanced buttercream application and decoration techniques.",
+        "chapters": [
+          {
+            "chapterId": "f6g7h8i9-j0k1-l2m3-n4o5-p6q7r8s9t0u1",
+            "type": "Video",
+            "title": "Korean-Style Buttercream Flowers",
+            "content": "https://example.com/videos/buttercream-flowers.mp4",
+            "videoLength": 1500,
+            "comments": [],
+            "videoUrl": "https://example.com/videos/buttercream-flowers.mp4",
+            "videoUniqueId": "vid_005",
+            "videoType": "dash"
+          },
+          {
+            "chapterId": "g7h8i9j0-k1l2-m3n4-o5p6-q7r8s9t0u1v2",
+            "type": "Text",
+            "title": "Temperature Control for Buttercream Success",
+            "content": "The perfect buttercream consistency is essential for professional results. Learn how to manage temperature throughout the decorating process...",
+            "comments": []
+          },
+          {
+            "chapterId": "h8i9j0k1-l2m3-n4o5-p6q7-r8s9t0u1v2w3",
+            "type": "Quiz",
+            "title": "Buttercream Mastery Quiz",
+            "content": "1. What causes buttercream to separate and how can it be fixed?\n2. Explain the differences between Swiss, Italian, and French buttercream.\n3. What is the ideal temperature for working with buttercream?",
+            "comments": []
+          }
+        ]
+      },
+      {
+        "sectionId": "3c9d5e7f-1g4h-6i8j-0k2l-4m6n8p0q2r4s",
+        "sectionTitle": "Spectacular Wedding Cakes",
+        "sectionDescription": "Create stunning multi-tiered wedding cakes with professional-grade techniques.",
+        "chapters": [
+          {
+            "chapterId": "i9j0k1l2-m3n4-o5p6-q7r8-s9t0u1v2w3x4",
+            "type": "Video",
+            "title": "Elegant Tiered Assembly",
+            "content": "https://example.com/videos/tiered-cake-assembly.mp4",
+            "videoLength": 1800,
+            "comments": [],
+            "videoUrl": "https://example.com/videos/tiered-cake-assembly.mp4",
+            "videoUniqueId": "vid_006",
+            "videoType": "mp4"
+          },
+          {
+            "chapterId": "j0k1l2m3-n4o5-p6q7-r8s9-t0u1v2w3x4y5",
+            "type": "Text",
+            "title": "Transportation Strategies",
+            "content": "Transporting tiered cakes requires careful planning and specialized techniques. Learn how professionals ensure cakes arrive in perfect condition...",
+            "comments": []
+          },
+          {
+            "chapterId": "k1l2m3n4-o5p6-q7r8-s9t0-u1v2w3x4y5z6",
+            "type": "Quiz",
+            "title": "Wedding Cake Logistics Quiz",
+            "content": "1. What is a 'cake box' and when is it necessary?\n2. Explain the importance of non-slip mats during transportation.\n3. How do you adjust recipes for stability in warm weather conditions?",
+            "comments": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "recipeId": "c5d6e7f8-g9h0-i1j2-k3l4-m5n6o7p8q9r0",
+    "teacherId": "user_7kFh92JkCpQw3N8M5L4xRzVtYs",
+    "bakerName": "Pierre Hermé",
+    "title": "Birthday Cake Fundamentals",
+    "description": "Learn to create memorable birthday cakes with perfect textures, balanced flavors, and personalized decorations.",
+    "category": "Celebration Cakes",
+    "image": "https://images.pexels.com/photos/1721932/pexels-photo-1721932.jpeg",
+    "price": 7999,
+    "difficulty": "Beginner",
+    "status": "Published",
+    "favorites": [
+      { "userId": "user_6tHm89QwNpKj3Fx5Vy2RdLcBs" },
+      { "userId": "user_9xWp45MnKjL8vRt2Hs6BqDcEy" }
+    ],
+    "sections": [
+      {
+        "sectionId": "3e5f7g9h-1i3j-5k7l-9m1n-3o5p7q9r1s3t",
+        "sectionTitle": "Perfect Cake Bases",
+        "sectionDescription": "Master essential cake recipes that provide the ideal foundation for celebration cakes.",
+        "chapters": [
+          {
+            "chapterId": "e5f6g7h8-i9j0-k1l2-m3n4-o5p6q7r8s9t0",
+            "type": "Video",
+            "title": "Moist Vanilla Birthday Cake",
+            "content": "https://example.com/videos/vanilla-cake.mp4",
+            "video": "https://example.com/videos/vanilla-cake.mp4",
+            "comments": []
+          },
+          {
+            "chapterId": "f6g7h8i9-j0k1-l2m3-n4o5-p6q7r8s9t0u1",
+            "type": "Quiz",
+            "title": "Cake Batter Quiz",
+            "content": "1. What causes a cake to dome in the center?\n2. Name three methods to ensure even cake layers.\n3. What is the role of emulsifiers in cake batter?",
+            "comments": []
+          },
+          {
+            "chapterId": "g7h8i9j0-k1l2-m3n4-o5p6-q7r8s9t0u1v2",
+            "type": "Text",
+            "title": "Rich Chocolate Fudge Cake",
+            "content": "This decadent chocolate cake recipe creates the perfect base for a memorable birthday celebration. Learn the secrets to intense chocolate flavor and perfect moisture content...",
+            "comments": []
+          }
+        ]
+      },
+      {
+        "sectionId": "4f6g8h0i-2j4k-6l8m-0n2p-4q6r8s0t2u4v",
+        "sectionTitle": "Fun Birthday Cake Decorations",
+        "sectionDescription": "Create playful, age-appropriate decorations for unforgettable birthday cakes.",
+        "chapters": [
+          {
+            "chapterId": "h8i9j0k1-l2m3-n4o5-p6q7-r8s9t0u1v2w3",
+            "type": "Video",
+            "title": "Character Cake Designs",
+            "content": "https://example.com/videos/character-cakes.mp4",
+            "video": "https://example.com/videos/character-cakes.mp4",
+            "comments": []
+          },
+          {
+            "chapterId": "i9j0k1l2-m3n4-o5p6-q7r8-s9t0u1v2w3x4",
+            "type": "Text",
+            "title": "Colorful Drip Techniques",
+            "content": "Master the trendy drip cake technique with perfect consistency, vibrant colors, and professional finishing touches...",
+            "comments": []
+          },
+          {
+            "chapterId": "j0k1l2m3-n4o5-p6q7-r8s9-t0u1v2w3x4y5",
+            "type": "Quiz",
+            "title": "Birthday Decoration Quiz",
+            "content": "1. What is the ideal consistency for a perfect drip effect?\n2. How do you create stable buttercream for piping characters?\n3. Name three food-safe alternatives to traditional sprinkles.",
+            "comments": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "recipeId": "d4e5f6g7-h8i9-j0k1-l2m3-n4o5p6q7r8s9",
+    "teacherId": "user_3rTg67LmZnXc4Vb8Wd0JyUhEq",
+    "bakerName": "Christina Tosi",
+    "title": "Modern Pastry Techniques",
+    "description": "Explore contemporary approaches to pastry with innovative flavors, textures, and presentations.",
+    "category": "Creative Pastry",
+    "image": "https://images.pexels.com/photos/1055272/pexels-photo-1055272.jpeg",
+    "price": 8999,
+    "difficulty": "Intermediate",
+    "status": "Published",
+    "favorites": [
+      { "userId": "user_6tHm89QwNpKj3Fx5Vy2RdLcBs" },
+      { "userId": "user_9xWp45MnKjL8vRt2Hs6BqDcEy" }
+    ],
+    "sections": [
+      {
+        "sectionId": "4u6v8w0x-2y4z-6a8b-0c2d-4e6f8g0h2i4j",
+        "sectionTitle": "Deconstructed Desserts",
+        "sectionDescription": "Learn how to reimagine classic pastries with modern plating and unexpected textures.",
+        "chapters": [
+          {
+            "chapterId": "g7h8i9j0-k1l2-m3n4-o5p6-q7r8s9t0u1v2",
+            "type": "Video",
+            "title": "Deconstructed Black Forest Cake",
+            "content": "https://example.com/videos/deconstructed-black-forest.mp4",
+            "video": "https://example.com/videos/deconstructed-black-forest.mp4",
+            "comments": []
+          },
+          {
+            "chapterId": "h8i9j0k1-l2m3-n4o5-p6q7-r8s9t0u1v2w3",
+            "type": "Quiz",
+            "title": "Modern Pastry Concepts Quiz",
+            "content": "1. What defines a 'deconstructed' dessert?\n2. Explain the concept of flavor mapping in modern dessert creation.\n3. How do texture contrasts enhance the dining experience?",
+            "comments": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "recipeId": "e5f6g7h8-i9j0-k1l2-m3n4-o5p6q7r8s9t0",
+    "teacherId": "user_7kFh92JkCpQw3N8M5L4xRzVtYs",
+    "bakerName": "Pierre Hermé",
+    "title": "Artistic Cake Decorating",
+    "description": "Transform cakes into edible works of art using advanced decorating techniques and artistic principles.",
+    "category": "Cake Design",
+    "image": "https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg",
+    "price": 12999,
+    "difficulty": "Advanced",
+    "status": "Published",
+    "favorites": [{ "userId": "user_6tHm89QwNpKj3Fx5Vy2RdLcBs" }],
+    "sections": [
+      {
+        "sectionId": "5k7l9m1n-3o5p-7q9r-1s3t-5u7v9w1x3y5z",
+        "sectionTitle": "Painted Cake Techniques",
+        "sectionDescription": "Master the art of painting directly onto cakes with edible mediums.",
+        "chapters": [
+          {
+            "chapterId": "i9j0k1l2-m3n4-o5p6-q7r8-s9t0u1v2w3x4",
+            "type": "Video",
+            "title": "Watercolor Effects on Fondant",
+            "content": "https://example.com/videos/fondant-watercolor.mp4",
+            "video": "https://example.com/videos/fondant-watercolor.mp4",
+            "comments": []
+          },
+          {
+            "chapterId": "j0k1l2m3-n4o5-p6q7-r8s9-t0u1v2w3x4y5",
+            "type": "Text",
+            "title": "Edible Gold Leaf Application",
+            "content": "Gold leaf adds unparalleled luxury to artistic cakes. Learn the proper handling techniques and design principles for elegant applications...",
+            "comments": []
+          }
+        ]
+      }
+    ]
+  }
+]
