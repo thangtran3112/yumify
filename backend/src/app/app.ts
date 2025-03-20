@@ -6,6 +6,7 @@ import morgan from 'morgan';
 
 import * as dynamoose from 'dynamoose';
 import bodyParser from 'body-parser';
+import recipeRoutes from '../routes/recipeRoutes';
 
 /* CONFIGURATIONS */
 dotenv.config();
@@ -27,5 +28,6 @@ app.use(cors());
 app.get("/", (_, res) => {
     res.send("Hello World");
 });
+app.use("/recipes", recipeRoutes);
 
 export default app;

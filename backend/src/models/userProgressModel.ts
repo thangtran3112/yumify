@@ -22,7 +22,7 @@ const sectionProgressSchema = new Schema({
   },
 });
 
-const userCourseProgressSchema = new Schema(
+const userProgressSchema = new Schema(
   {
     userId: {
       type: String,
@@ -56,8 +56,8 @@ const userCourseProgressSchema = new Schema(
   }
 );
 
-const UserCourseProgress = model(
-  "UserCourseProgress",
-  userCourseProgressSchema
+const UserProgress = model(
+  "UserProgress",
+  userProgressSchema
 );
-export default UserCourseProgress;
+export default UserProgress;
