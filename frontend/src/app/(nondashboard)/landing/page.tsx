@@ -6,6 +6,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { useCarousel } from "@/hooks/useCarousel";
 import { Skeleton } from "@/components/ui/skeleton";
+import { useGetRecipesQuery } from "@/state/api";
+import { useRouter } from "next/navigation";
+import RecipeCardSearch from "@/components/RecipeCardSearch";
 
 const LoadingSkeleton = () => {
   return (
@@ -30,9 +33,9 @@ const LoadingSkeleton = () => {
           ))}
         </div>
 
-        <div className="landing-skeleton__courses">
+        <div className="landing-skeleton__recipes">
           {[1, 2, 3, 4].map((_, index) => (
-            <Skeleton key={index} className="landing-skeleton__course-card" />
+            <Skeleton key={index} className="landing-skeleton__recipe-card" />
           ))}
         </div>
       </div>
@@ -41,7 +44,17 @@ const LoadingSkeleton = () => {
 };
 
 const Landing = () => {
+  const router = useRouter();
   const currentImage = useCarousel({ totalImages: 3 });
+  const { data: recipes, isLoading, isError } = useGetRecipesQuery({});
+
+  const handleRecipeClick = (recipeId: string) => {
+    router.push(`/search?id=${recipeId}`, {
+      scroll: false,
+    });
+  };
+
+  if (isLoading) return <LoadingSkeleton />;
 
   return (
     <motion.div
@@ -99,19 +112,31 @@ const Landing = () => {
           and making the most.
         </p>
         <div className="landing__tags">
-          {[
-            "web development",
-            "enterprise IT",
-            "react nextjs",
-            "javascript",
-            "backend development",
-          ].map((tag, index) => (
-            <span key={index} className="landing__tag">
-              {tag}
-            </span>
-          ))}
+          {["pastry", "cakes", "macaron", "cupcake", "birthday"].map(
+            (tag, index) => (
+              <span key={index} className="landing__tag">
+                {tag}
+              </span>
+            )
+          )}
         </div>
-        <div className="landing__courses">COURSES DISPLAY OVER HERE</div>
+        <div className="landing__recipes">
+          {recipes &&
+            recipes.slice(0, 4).map((recipe, index) => (
+              <motion.div
+                key={recipe.recipeId}
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+                viewport={{ amount: 0.4 }}
+              >
+                <RecipeCardSearch
+                  recipe={recipe}
+                  onClick={() => handleRecipeClick(recipe.recipeId)}
+                />
+              </motion.div>
+            ))}
+        </div>
       </motion.div>
     </motion.div>
   );

@@ -239,7 +239,7 @@ export function convertToSubCurrency(amount: number, factor = 100) {
 
 export const NAVBAR_HEIGHT = 48;
 
-export const courseCategories = [
+export const recipeCategories = [
   { value: "technology", label: "Technology" },
   { value: "science", label: "Science" },
   { value: "mathematics", label: "Mathematics" },
@@ -288,16 +288,16 @@ export const customDataGridStyles = {
   },
 };
 
-export const createCourseFormData = (
-  data: CourseFormData,
+export const createRecipeFormData = (
+  data: RecipeFormData,
   sections: Section[]
 ): FormData => {
   const formData = new FormData();
-  formData.append("title", data.courseTitle);
-  formData.append("description", data.courseDescription);
-  formData.append("category", data.courseCategory);
-  formData.append("price", data.coursePrice.toString());
-  formData.append("status", data.courseStatus ? "Published" : "Draft");
+  formData.append("title", data.recipeTitle);
+  formData.append("description", data.recipeDescription);
+  formData.append("category", data.recipeCategory);
+  formData.append("price", data.recipePrice.toString());
+  formData.append("status", data.recipeStatus ? "Published" : "Draft");
 
   const sectionsWithVideos = sections.map((section) => ({
     ...section,
@@ -314,7 +314,7 @@ export const createCourseFormData = (
 
 export const uploadAllVideos = async (
   localSections: Section[],
-  courseId: string,
+  recipeId: string,
   getUploadVideoUrl: any
 ) => {
   const updatedSections = localSections.map((section) => ({
@@ -331,7 +331,7 @@ export const uploadAllVideos = async (
         try {
           const updatedChapter = await uploadVideo(
             chapter,
-            courseId,
+            recipeId,
             updatedSections[i].sectionId,
             getUploadVideoUrl
           );
@@ -351,7 +351,7 @@ export const uploadAllVideos = async (
 
 async function uploadVideo(
   chapter: Chapter,
-  courseId: string,
+  recipeId: string,
   sectionId: string,
   getUploadVideoUrl: any
 ) {
@@ -359,7 +359,7 @@ async function uploadVideo(
 
   try {
     const { uploadUrl, videoUrl } = await getUploadVideoUrl({
-      courseId,
+      recipeId,
       sectionId,
       chapterId: chapter.chapterId,
       fileName: file.name,

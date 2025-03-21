@@ -1,15 +1,15 @@
 import * as z from "zod";
 
-// Course Editor Schemas
-export const courseSchema = z.object({
-  courseTitle: z.string().min(1, "Title is required"),
-  courseDescription: z.string().min(1, "Description is required"),
-  courseCategory: z.string().min(1, "Category is required"),
-  coursePrice: z.string(),
-  courseStatus: z.boolean(),
+// Recipe Editor Schemas
+export const recipeSchema = z.object({
+  recipeTitle: z.string().min(1, "Title is required"),
+  recipeDescription: z.string().min(1, "Description is required"),
+  recipeCategory: z.string().min(1, "Category is required"),
+  recipePrice: z.string(),
+  recipeStatus: z.boolean(),
 });
 
-export type CourseFormData = z.infer<typeof courseSchema>;
+export type RecipeFormData = z.infer<typeof recipeSchema>;
 
 // Chapter Schemas
 export const chapterSchema = z.object({
@@ -37,7 +37,7 @@ export type GuestFormData = z.infer<typeof guestSchema>;
 
 // Notification Settings Schema
 export const notificationSettingsSchema = z.object({
-  courseNotifications: z.boolean(),
+  recipeNotifications: z.boolean(),
   emailAlerts: z.boolean(),
   smsAlerts: z.boolean(),
   notificationFrequency: z.enum(["immediate", "daily", "weekly"]),

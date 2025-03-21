@@ -33,7 +33,7 @@ export const makeStore = () => {
             "meta.baseQueryMeta.response",
           ],
           ignoredPaths: [
-            "global.courseEditor.sections",
+            "global.recipeEditor.sections",
             "entities.videos.data",
             "meta.baseQueryMeta.request",
             "meta.baseQueryMeta.response",
