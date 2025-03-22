@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { BaseQueryApi, createApi, FetchArgs, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { toast } from "sonner";
 import { User as ClerkUser } from "@clerk/nextjs/server";
-
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { Clerk } from "@clerk/clerk-js";
+import { toast } from "sonner";
 
 const customBaseQuery = async (
   args: string | FetchArgs,
@@ -22,7 +23,7 @@ const customBaseQuery = async (
 
   try {
     const result: any = await baseQuery(args, api, extraOptions);
-
+    // for any api error, we will show a toast
     if (result.error) {
       const errorData = result.error.data;
       const errorMessage =
@@ -43,6 +44,7 @@ const customBaseQuery = async (
     if (result.data) {
       result.data = result.data.data;
     } else if (
+      // corner case for when a DELETE request returns 204 (No Content)
       result.error?.status === 204 ||
       result.meta?.response?.status === 24
     ) {

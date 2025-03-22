@@ -35,6 +35,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
+/* MIDDLEWARE to secure with Clerk*/
+app.use(clerkMiddleware());
+
 /* ROUTES */
 app.get("/", (_, res) => {
     res.send("Hello World");
