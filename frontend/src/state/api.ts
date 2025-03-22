@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { BaseQueryApi, createApi, FetchArgs, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { toast } from "sonner";
+import { User as ClerkUser } from "@clerk/nextjs/server";
+
 
 const customBaseQuery = async (
   args: string | FetchArgs,
@@ -8,7 +10,14 @@ const customBaseQuery = async (
   extraOptions: any
 ) => {
   const baseQuery = fetchBaseQuery({
-    baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL
+    baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL,
+    prepareHeaders: async (headers) => {
+      const token = await window.Clerk?.session?.getToken();
+      if (token) {
+        headers.set("Authorization", `Bearer ${token}`);
+      }
+      return headers;
+    },
   });
 
   try {
@@ -56,6 +65,19 @@ export const api = createApi({
   endpoints: (build) => ({
     /* 
 ===============
+USER CLERK
+=============== 
+*/
+    updateUser: build.mutation<ClerkUser, Partial<ClerkUser> & { userId: string }>({
+      query: ({ userId, ...updatedUser }) => ({
+        url: `users/clerk/${userId}`,
+        method: "PUT",
+        body: updatedUser,
+      }),
+      invalidatesTags: ["Users"],
+    }),
+    /* 
+===============
 RECIPES
 =============== 
 */
@@ -75,5 +97,7 @@ RECIPES
 });
 
 export const {
-  useGetRecipesQuery
+  useGetRecipesQuery,
+  useUpdateUserMutation,
+  useGetRecipeQuery
 } = api;

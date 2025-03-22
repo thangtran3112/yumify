@@ -22,7 +22,11 @@ declare global {
     notificationFrequency?: "immediate" | "daily" | "weekly";
   }
 
-  interface User {
+  /**
+   * Rename this to AppUser to differentiate from Clerk User
+   * and to avoid confusion.
+   */
+  interface AppUser {
     userId: string;
     firstName?: string;
     lastName?: string;
@@ -85,7 +89,7 @@ declare global {
     lastAccessedTimestamp: string;
   }
 
-  type CreateUserArgs = Omit<User, "userId">;
+  type CreateUserArgs = Omit<AppUser, "userId">;
   type CreateRecipeArgs = Omit<Recipe, "recipeId">;
   type CreateTransactionArgs = Omit<Transaction, "transactionId">;
 

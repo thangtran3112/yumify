@@ -12,8 +12,8 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar";
 import {
-  BookOpen,
   Briefcase,
+  Cake,
   DollarSign,
   LogOut,
   PanelLeft,
@@ -33,13 +33,13 @@ const AppSidebar = () => {
 
   const navLinks = {
     student: [
-      { icon: BookOpen, label: "Recipes", href: "/user/recipes" },
+      { icon: Cake, label: "Recipes", href: "/user/recipes" },
       { icon: Briefcase, label: "Billing", href: "/user/billing" },
       { icon: User, label: "Profile", href: "/user/profile" },
       { icon: Settings, label: "Settings", href: "/user/settings" },
     ],
     teacher: [
-      { icon: BookOpen, label: "Recipes", href: "/teacher/recipes" },
+      { icon: Cake, label: "Recipes", href: "/teacher/recipes" },
       { icon: DollarSign, label: "Billing", href: "/teacher/billing" },
       { icon: User, label: "Profile", href: "/teacher/profile" },
       { icon: Settings, label: "Settings", href: "/teacher/settings" },
