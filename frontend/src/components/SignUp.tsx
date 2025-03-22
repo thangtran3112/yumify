@@ -8,23 +8,24 @@ import { useSearchParams } from "next/navigation";
 const SignUpComponent = () => {
   const { user } = useUser();
   const searchParams = useSearchParams();
+  // in SignUp page, there is a link to go the signin
   const isCheckoutPage = searchParams.get("showSignUp") !== null;
-  const courseId = searchParams.get("id");
+  const recipeId = searchParams.get("id");
 
   const signInUrl = isCheckoutPage
-    ? `/checkout?step=1&id=${courseId}&showSignUp=false`
+    ? `/checkout?step=1&id=${recipeId}&showSignUp=false`
     : "/signin";
 
   const getRedirectUrl = () => {
     if (isCheckoutPage) {
-      return `/checkout?step=2&id=${courseId}&showSignUp=false`;
+      return `/checkout?step=2&id=${recipeId}&showSignUp=false`;
     }
 
     const userType = user?.publicMetadata?.userType as string;
     if (userType === "teacher") {
-      return "/teacher/courses";
+      return "/teacher/recipes";
     }
-    return "/user/courses";
+    return "/user/recipes";
   };
 
   return (
