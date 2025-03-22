@@ -20,7 +20,7 @@ const SelectedRecipe = ({ recipe, handleEnrollNow }: SelectedRecipeProps) => {
         <p className="selected-recipe__description">{recipe.description}</p>
 
         <div className="selected-recipe__sections">
-          <h4 className="selected-recipe__sections-title">Recipe Content</h4>
+          <h4 className="selected-recipe__sections-title">Recipe Overview</h4>
           <AccordionSections sections={recipe.sections} />
         </div>
 
