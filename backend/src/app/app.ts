@@ -14,6 +14,7 @@ import {
     requireAuth,
 } from "@clerk/express";
 import userClerkRoutes from '../routes/userClerkRoutes';
+import transactionRoutes from '../routes/transactionRoutes';
 
 /* CONFIGURATIONS */
 dotenv.config();
@@ -44,6 +45,6 @@ app.get("/", (_, res) => {
 });
 app.use("/recipes", recipeRoutes);
 app.use("/users/clerk", requireAuth(), userClerkRoutes);
-
+app.use("/transactions", requireAuth(), transactionRoutes);
 
 export default app;
