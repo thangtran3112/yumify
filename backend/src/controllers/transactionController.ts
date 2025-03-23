@@ -88,7 +88,7 @@ export const createTransaction = async (
       paymentProvider,
     });
     await newTransaction.save();
-
+    console.log("Transaction saved:", newTransaction);
     // 3. create initial recipe progress
     const initialProgress = new UserProgress({
       userId,
@@ -105,6 +105,7 @@ export const createTransaction = async (
       lastAccessedTimestamp: new Date().toISOString(),
     });
     await initialProgress.save();
+    console.log("Initial progress saved:", initialProgress);
 
     // 4. add enrollment to relevant recipe
     await Recipe.update(
@@ -115,6 +116,7 @@ export const createTransaction = async (
         },
       }
     );
+    console.log("Recipe enrollment updated");
 
     res.json({
       message: "Purchased Recipe successfully",

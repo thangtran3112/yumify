@@ -13,3 +13,7 @@ npx shadcn add accordion avatar button card dialog form input label navigation-m
 
 - [Clerk nextjs components](https://clerk.com/docs/components/overview)
 - [Clerk middleware matcher and keys](https://dashboard.clerk.com/apps/app_2ueEwhv5zX5y7myoENR2cSVorRn/instances/ins_2ueEwj3wIv09EZJTN62YWJ1WUA0)
+
+## Checking out
+
+- For checkout Stripe feature to work, we must use https. `http://localhost:3000` is not sufficient to create Stripe intent

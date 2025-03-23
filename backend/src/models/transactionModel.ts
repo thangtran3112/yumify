@@ -20,7 +20,7 @@ const transactionSchema = new Schema(
       type: String,
       required: true,
       index: {
-        name: "CourseTransactionsIndex",
+        name: "RecipeTransactionsIndex", // GSI
         type: "global",
       },
     },
